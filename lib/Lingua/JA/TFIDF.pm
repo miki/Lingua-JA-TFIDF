@@ -11,7 +11,7 @@ use Lingua::JA::TFIDF::Fetcher;
 
 __PACKAGE__->mk_accessors($_) for qw( _mecab _df_data ng_word _fetcher);
 
-our $VERSION = '0.00003';
+our $VERSION = '0.00004';
 
 my $N = 25000000000;
 
