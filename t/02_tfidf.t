@@ -39,6 +39,7 @@ sub correct {
 
 sub overwrite {
 
+    no warnings 'redefine';
     *Lingua::JA::TFIDF::_calc_tf = sub {
 
         return {
