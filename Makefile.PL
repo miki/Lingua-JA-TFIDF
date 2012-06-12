@@ -17,11 +17,11 @@ requires('HTML::Feature');
 build_requires 'Test::More';
 build_requires 'Test::HTTP::Server::Simple';
 build_requires 'HTTP::Server::Simple::CGI';
+test_requires 'Test::Base';
 recommends('YAML::Sync');
 recommends('Getopt::Long');
 recommends('Term::ReadLine');
 recommends('HTML::Feature');
-use_test_base;
 auto_install;
 
 install_script('script/tfidf');

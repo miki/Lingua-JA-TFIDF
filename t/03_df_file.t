@@ -44,6 +44,7 @@ sub correct {
 }
 
 sub overwrite {
+    no warnings 'redefine';
 
     *Lingua::JA::TFIDF::Fetcher::_prepare = sub {
         my $self                 = shift;
